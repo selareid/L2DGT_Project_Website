@@ -34,14 +34,15 @@ body {
 }
 
 #top-nav ul li p {
-  padding: 0px 1px;
+  padding-left: 1px;
+  padding-right: 1px;
   color: black;
   text-decoration: none;
 }
 
 #top-nav ul li a {
   display: block;
-  padding: 14px 16px;
+  padding: 16px 16px;
   color: black;
   text-decoration: none;
 }
@@ -50,10 +51,24 @@ body {
   background-color: #dddddd;
 }
 
+.article_spacer {
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 15px
+}
+
+.article_spacer:hover {
+  opacity: 0.5;
+}
+
 article {
   text-align: center;
 }
 
+article img {
+  border: solid;
+}
+
 footer p {
-  padding: 10px;
+  padding-left: 15px;
 }
