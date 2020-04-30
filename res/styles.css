@@ -1,0 +1,59 @@
+* {
+  box-sizing: border-box; /*padding and border are included in the width and height*/
+}
+
+body {
+  background-color: #b6d7a8ff;
+  font-family: Verdana;
+}
+
+.outline {
+  border-radius: 15px;
+  width: 90%;
+  max-width: 750px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  background-color: white;
+  overflow: hidden;
+}
+
+.outline * {
+  max-width: 100%;
+}
+
+#top-nav ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+/* floats the list items left to line them up horizontally */
+#top-nav ul li {
+  float: left;
+}
+
+#top-nav ul li p {
+  padding: 0px 1px;
+  color: black;
+  text-decoration: none;
+}
+
+#top-nav ul li a {
+  display: block;
+  padding: 14px 16px;
+  color: black;
+  text-decoration: none;
+}
+
+#top-nav ul li a:hover {
+  background-color: #dddddd;
+}
+
+article {
+  text-align: center;
+}
+
+footer p {
+  padding: 10px;
+}
