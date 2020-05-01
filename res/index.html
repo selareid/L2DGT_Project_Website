@@ -4,21 +4,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Daniel Reid Website So Cool</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="styles.css">
   </head>
   <body>
-    <header class="outline">
-      <div id="top-nav"> <!-- header navigation -->
-        <ul> <!-- list for navigation -->
-          <li><a href="index.html"><img src="logo.png"></img></a></li>
-          <li><p>||</p></li>
-          <li><a href="blog.html">Blog</a></li>
-          <li><p>||</p></li>
-          <li><a href="projects.html">Projects</a></li>
-          <li><p>||</p></li>
-          <li><a href="about.html">About</a></li>
-        </ul>
-      </div>
+    <header id="header" class="outline">
     </header>
 
     <section>
@@ -39,8 +29,12 @@
       </article>
     </section>
 
-    <footer class="outline">
-      <p>- .... .- -. -.- ...       ..-. --- .-.       -.-. --- -- .. -. --.</p>
+    <footer id="footer" class="outline">
     </footer>
+
+    <script>
+      $("#header").load("header.html");
+      $("#footer").load("footer.html");
+    </script>
   </body>
 </html>
