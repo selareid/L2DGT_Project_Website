@@ -58,7 +58,7 @@ body {
 .article_spacer {
   padding-left: 15px;
   padding-right: 15px;
-  padding-bottom: 15px
+  padding-bottom: 15px;
 }
 
 .article_spacer:hover {
@@ -76,4 +76,9 @@ article img {
 footer p {
   padding-left: 15px;
   text-align: center;
+}
+
+#links_list {
+  list-style-type: none;
+  padding: 0px;
 }
