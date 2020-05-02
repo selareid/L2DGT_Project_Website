@@ -61,10 +61,6 @@ body {
   padding-bottom: 15px;
 }
 
-.article_spacer:hover {
-  opacity: 0.5;
-}
-
 article {
   text-align: center;
 }
