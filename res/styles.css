@@ -7,6 +7,7 @@ body {
   font-family: Verdana;
 }
 
+/* .outline is any section of page with white curved-corner background */
 .outline {
   border-radius: 15px;
   width: 90%;
@@ -22,6 +23,7 @@ body {
   max-width: 100%;
 }
 
+/* top navigation start */
 #top-nav ul {
   list-style-type: none;
   margin: 0px;
@@ -55,7 +57,8 @@ body {
   text-decoration: none;
 }
 
-.article_spacer {
+/* all body articles stuff starts */
+.article_spacer { /* to pad inside body articles items */
   padding-left: 15px;
   padding-right: 15px;
   padding-bottom: 15px;
@@ -69,11 +72,13 @@ article img {
   border: solid;
 }
 
+/* footer stuff starts */
 footer p {
   padding-left: 15px;
   text-align: center;
 }
 
+/* About page */
 #links_list {
   list-style-type: none;
   padding: 0px;
