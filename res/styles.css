@@ -1,3 +1,7 @@
+html {
+  overflow-y: scroll;
+}
+
 * {
   box-sizing: border-box; /*padding and border are included in the width and height*/
 }
