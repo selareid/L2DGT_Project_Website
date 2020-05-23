@@ -7,7 +7,7 @@ html {
 }
 
 body {
-  background-color: #b6d7a8ff;
+  background-color: rgb(182, 215, 168);
   font-family: Verdana;
 }
 
@@ -51,7 +51,7 @@ body {
 }
 
 #top-nav ul li a:hover {
-  background-color: #dddddd;
+  background-color: rgb(221, 221, 221);
 }
 
 #top-nav ul li p {
