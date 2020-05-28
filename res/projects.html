@@ -26,7 +26,7 @@
           $.each(response, (item_it) => { //loop over each item in the projects array
             let item = response[item_it];
             //add item to new article element
-            $(`<article class="outline" id="${item_it} ${item}"></article>`).load(`projects/${item}.html`).appendTo("#projects_section");
+            $(`<article class="outline" id="${item_it}_${item}"></article>`).load(`projects/${item}.html`).appendTo("#projects_section");
           });
         }
       });
