@@ -1,5 +1,5 @@
 html {
-  overflow-y: scroll;
+  overflow-y: scroll; /*adds scroll-bar to web pages in order to keep page width consistent*/
 }
 
 * {
@@ -11,28 +11,29 @@ body {
   font-family: Verdana;
 }
 
-/* .outline is any section of page with white curved-corner background */
+/* .outline is the parts of page displayed with white curved-corner background
+    using a class like this keeps each page/article/section visually consistent */
 .outline {
-  border-radius: 15px;
+  border-radius: 15px; /*the edge curve*/
   width: 90%;
-  min-width: 425px;
-  max-width: 750px;
-  margin-left: auto;
-  margin-right: auto;
+  min-width: 425px; /*so that on small screens the header and footer don't wrap*/
+  max-width: 750px; /*for visual consistency*/
+  margin-left: auto; /*for centering*/
+  margin-right: auto; /*for centering*/
   margin-bottom: 10px;
   background-color: white;
-  overflow: hidden;
+  overflow: hidden; /*for width/size consistency*/
 }
 
 .outline * {
-  max-width: 100%;
+  max-width: 100%; /*stops child items becoming bigger than the .outline*/
 }
 
 /* top navigation start */
 #top-nav ul {
-  list-style-type: none;
-  margin: 0px;
-  padding: 0px;
+  list-style-type: none; /*removes the list bullet points*/
+  margin: 0px; /*remove default*/
+  padding: 0px; /*remove default*/
 }
 
 /* floats the list items left to line them up horizontally */
@@ -41,20 +42,21 @@ body {
 }
 
 #top-nav ul li a img {
-  max-height: 16px;
+  max-height: 16px; /*keep image size consistent with other link items*/
 }
 
 #top-nav ul li a {
-  display: block;
-  padding: 16px 16px;
-  color: black;
-  text-decoration: none;
+  display: block; /*for sizing/spacing*/
+  padding: 16px 16px; /*for sizing/spacing*/
+  color: black; /*stops links from turning blue/purple*/
+  text-decoration: none; /*removes link underline*/
 }
 
 #top-nav ul li a:hover {
-  background-color: rgb(221, 221, 221);
+  background-color: rgb(221, 221, 221); /*highlight on hover*/
 }
 
+/*copied and modified from "a" item above for consistency*/
 #top-nav ul li p {
   padding-left: 1px;
   padding-right: 1px;
@@ -74,17 +76,16 @@ article {
 }
 
 article img {
-  border: solid;
+  border: solid; /*gives images a clear outline*/
 }
 
 /* footer stuff starts */
 footer p {
-  padding-left: 15px;
   text-align: center;
 }
 
 /* About page */
 #links_list {
-  list-style-type: none;
-  padding: 0px;
+  list-style-type: none; /*removes the list bullet points*/
+  padding: 0px; /*keeps the items nice and centered with the rest of the content*/
 }

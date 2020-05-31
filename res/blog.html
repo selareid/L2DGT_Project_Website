@@ -4,20 +4,22 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>SelaReid | Blog</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="styles.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> <!-- import jquery from Google CDN-->
+    <link rel="stylesheet" type="text/css" href="styles.css"> <!-- import css stylesheet-->
   </head>
   <body>
     <header id="header" class="outline">
     </header>
 
-    <section id="blogs_section">
+    <section id="blogs_section"> <!-- blog post section where blog posts get loaded into -->
     </section>
 
     <footer id="footer" class="outline">
     </footer>
 
     <script>
+      //load header, footer content using jquery
       $("#header").load("header.html");
       $("#footer").load("footer.html");
 
@@ -28,7 +30,7 @@
         success: (response) => {
           $.each(response, (item_it) => { //loop over each item in the projects array
             let item = response[item_it];
-            //add item to new article element
+            //add item to new article element and append to projects_section
             $(`<article class="outline" id="${item_it}_${item}"></article>`).load(`blog/${item}.html`).appendTo("#blogs_section");
           });
         }

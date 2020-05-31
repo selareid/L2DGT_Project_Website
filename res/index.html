@@ -4,8 +4,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>SelaReid | Home</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="styles.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> <!-- import jquery from Google CDN-->
+    <link rel="stylesheet" type="text/css" href="styles.css"> <!-- import css stylesheet-->
   </head>
   <body>
     <header id="header" class="outline">
@@ -33,6 +34,7 @@
     </footer>
 
     <script>
+      // load header, footer content using jquery
       $("#header").load("header.html");
       $("#footer").load("footer.html");
     </script>
