@@ -89,3 +89,13 @@ footer p {
   list-style-type: none; /*removes the list bullet points*/
   padding: 0px; /*keeps the items nice and centered with the rest of the content*/
 }
+
+/*All projects/blog posts button/link for when viewing specific post*/
+.query_back {
+  display: block; /*for sizing/spacing*/
+  float: left;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  text-decoration: none; /*removes link underline*/
+  color: blue; /*stops links from turning blue/purple*/
+}

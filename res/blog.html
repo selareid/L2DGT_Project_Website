@@ -25,8 +25,11 @@
 
       let params = new window.URLSearchParams(window.location.search);
       let query_string = params.get('qry'); //string for project url in projects folder "blog/______.html"
-      
+
       if (query_string) { //if a query is given, load it
+        //'back' button
+        $(`<article class="outline"><div class="article_spacer"><a class="query_back" href="blog.html">ALL BLOG POSTS</a></div></article>`).appendTo("#blogs_section");
+        //load the queried project
         $(`<article class="outline" id="0_${query_string}"></article>`).load(`blog/${query_string}.html`).appendTo("#blogs_section");
       }
       else {

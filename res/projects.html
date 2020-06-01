@@ -27,6 +27,9 @@
       let query_string = params.get('qry'); //string for project url in projects folder "projects/______.html"
 
       if (query_string) { //if a query is given, load it
+        //'back' button
+        $(`<article class="outline"><div class="article_spacer"><a class="query_back" href="projects.html">ALL PROJECTS</a></div></article>`).appendTo("#projects_section");
+        //load the queried project
         $(`<article class="outline" id="0_${query_string}"></article>`).load(`projects/${query_string}.html`).appendTo("#projects_section");
       }
       else {
