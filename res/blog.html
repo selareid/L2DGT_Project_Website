@@ -29,8 +29,13 @@
       if (query_string) { //if a query is given, load it
         //'back' button
         $(`<article class="outline"><div class="article_spacer"><a class="query_back" href="blog.html">ALL BLOG POSTS</a></div></article>`).appendTo("#blogs_section");
-        //load the queried project
-        $(`<article class="outline" id="0_${query_string}"></article>`).load(`blog/${query_string}.html`).appendTo("#blogs_section");
+
+        //load the queried post
+        let post_element = $(`<article class="outline" id="0_${query_string}"></article>`).load(`blog/${query_string}.html`, () => {
+          //add link to the post on its own
+          $(`<a class="post_link" title="${query_string}" href="blog.html?qry=${query_string}">#</a>`).prependTo(post_element.find("div"));
+        });
+        post_element.appendTo("#blogs_section"); //add the post to the content section
       }
       else {
         //gets the json array of blog file names from blog/blogs.json
@@ -41,7 +46,11 @@
             $.each(response, (item_it) => { //loop over each item in the projects array
               let item = response[item_it];
               //add item to new article element and append to projects_section
-              $(`<article class="outline" id="${item_it}_${item}"></article>`).load(`blog/${item}.html`).appendTo("#blogs_section");
+              let post_element = $(`<article class="outline" id="${item_it}_${item}"></article>`).load(`blog/${item}.html`, () => {
+                //add link to the post on its own
+                $(`<a class="post_link" title="${item}" href="blog.html?qry=${item}">#</a>`).prependTo(post_element.find("div"));
+              })
+              post_element.appendTo("#blogs_section"); //add the post to the content section
             });
           }
         });

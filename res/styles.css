@@ -98,3 +98,13 @@ footer p {
   text-decoration: none; /*removes link underline*/
   color: blue; /*stops links from turning blue/purple*/
 }
+
+/*post link # button*/
+.post_link {
+  height: 0px; /*so that it doesn't affect other element's positioning*/
+  width: 0px;
+  float: right; /*GO RIGHT*/
+  margin-right: 15px; /*don't go too farr right mate*/
+  text-decoration: none; /*removes link underline*/
+  color: black; /*don't show link colours (blue/purple)*/
+}
