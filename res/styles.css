@@ -26,7 +26,7 @@ body {
 }
 
 .outline * {
-  max-width: 100%; /*stops child items becoming bigger than the .outline*/
+  max-width: 100%; /*stops child items becoming wider than the .outline*/
 }
 
 /* top navigation start */
