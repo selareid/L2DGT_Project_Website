@@ -92,7 +92,6 @@ footer p {
 
 /*All projects/blog posts button/link for when viewing specific post*/
 .query_back {
-  display: block; /*for sizing/spacing*/
   float: left;
   margin-top: 15px;
   margin-bottom: 15px;
