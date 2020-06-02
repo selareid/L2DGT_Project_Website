@@ -23,7 +23,7 @@
       $("#header").load("header.html");
       $("#footer").load("footer.html");
 
-      let params = new window.URLSearchParams(window.location.search);
+      let params = new window.URLSearchParams(window.location.search); //get url queries
       let query_string = params.get('qry'); //string for project url in projects folder "projects/______.html"
 
       if (query_string) { //if a query is given, load it
