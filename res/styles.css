@@ -9,6 +9,7 @@ html {
 body {
   background-color: rgb(182, 215, 168);
   font-family: Verdana;
+  min-width: 425px; /*so that on small screens the header and footer don't wrap*/
 }
 
 /* .outline is the parts of page displayed with white curved-corner background
@@ -16,7 +17,6 @@ body {
 .outline {
   border-radius: 15px; /*the edge curve*/
   width: 90%;
-  min-width: 425px; /*so that on small screens the header and footer don't wrap*/
   max-width: 750px; /*for visual consistency*/
   margin-left: auto; /*for centering*/
   margin-right: auto; /*for centering*/
