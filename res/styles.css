@@ -84,6 +84,22 @@ footer p {
   text-align: center;
 }
 
+/* Home/Index page post hover colouring */
+.home_post_link {
+    position: relative;
+    display: inline-block;
+}
+
+.home_post_link:hover:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgba(200, 200, 200, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
 /* About page */
 #links_list {
   list-style-type: none; /*removes the list bullet points*/
